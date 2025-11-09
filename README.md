@@ -1,43 +1,102 @@
-# Next.js on Netlify Platform Starter
+# JobPlat Job Board
 
-[Live Demo](https://nextjs-platform-starter.netlify.app/)
+A professional-grade career platform designed exclusively for Carnegie Mellon University Africa graduates and current students. Built with Next.js 14, TypeScript, and Tailwind CSS.
 
-A modern starter based on Next.js 16 (App Router), Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blob Store).
+## 🚀 Features
 
-In this site, Netlify Core Primitives are used both implictly for running Next.js features (e.g. Route Handlers, image optimization via `next/image`, and more) and also explicitly by the user code.
+- **Professional Design**: Clean, modern interface with JobPlat branding
+- **Role-Based Access**: Support for Students/Alumni, Career Officers, and Administrators
+- **Job Management**: Comprehensive job posting and application tracking
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Accessibility**: WCAG 2.1 AA compliant throughout
 
-Implicit usage means you're using any Next.js functionality and everything "just works" when deployed - all the plumbing is done for you. Explicit usage is framework-agnostic and typically provides more features than what Next.js exposes.
+## 🛠️ Technology Stack
 
-## Deploying to Netlify
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS with custom design system
+- **State Management**: Zustand
+- **Forms**: React Hook Form with Zod validation
+- **Icons**: Lucide React
+- **Animations**: Framer Motion
+- **UI Components**: Headless UI + Radix UI
 
-Click the button below to deploy this template to your Netlify account.
+## 📦 Installation
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-platform-starter)
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd JobPlat-job-board
+   ```
 
-## Developing Locally
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-1. Clone this repository, then run `npm install` in its root directory.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-2. For the starter to have full functionality locally (e.g. edge functions, blob store), please ensure you have an up-to-date version of Netlify CLI. Run:
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🧰 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run lint:fix` - Fix ESLint issues
+- `npm run format` - Format code with Prettier
+- `npm run format:check` - Check code formatting
+- `npm run type-check` - Run TypeScript type checking
+- `npm run clean` - Clean build artifacts
+
+## 🎨 Design System
+
+The project includes a comprehensive design system with:
+
+- **JobPlat Brand Colors**: Official university colors and professional palette
+- **Typography**: Inter font family with proper font weights
+- **Components**: Reusable UI components with consistent styling
+- **Animations**: Smooth transitions and micro-interactions
+- **Accessibility**: Focus states and ARIA compliance
+
+## 📁 Project Structure
 
 ```
-npm install netlify-cli@latest -g
+src/
+├── app/                 # Next.js App Router pages
+├── components/          # Reusable UI components
+├── lib/                 # Utility functions and configurations
+├── types/               # TypeScript type definitions
+├── hooks/               # Custom React hooks
+├── store/               # Zustand state management
+└── data/                # Mock data and services
 ```
 
-3. Link your local repository to the deployed Netlify site. This will ensure you're using the same runtime version for both local development and your deployed site.
+## 🔧 Development Guidelines
 
-```
-netlify link
-```
+- Follow TypeScript strict mode
+- Use Tailwind CSS for styling
+- Implement proper error handling
+- Write accessible components
+- Follow the established file structure
+- Use conventional commit messages
 
-4. Then, run the Next.js development server via Netlify CLI:
+## 📋 Next Steps
 
-```
-netlify dev
-```
+1. Implement core TypeScript interfaces and mock data
+2. Build foundational layout and navigation components
+3. Create authentication and role management system
+4. Develop job search and filtering functionality
+5. Build user profile and application tracking
 
-If your browser doesn't navigate to the site automatically, visit [localhost:8888](http://localhost:8888).
+## 🤝 Contributing
 
-## Resources
+This project follows the JobPlat development standards. Please ensure all code is properly formatted and tested before submitting.
 
-- Check out the [Next.js on Netlify docs](https://docs.netlify.com/frameworks/next-js/overview/)
+## 📄 License
+
+This project is developed for Carnegie Mellon University Africa.
